@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CrystalsCollector Game </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="jumbotron jumbo-style">
+                <h1 style="margin-bottom: 10px;">CrystalsCollector Game</h1>
+                <h6>Instructions:</h3>
+                <ul>
+                    <li>You will be given a random Target Number at the start of the game.</li>
+                    <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                        to Your Number.</li>
+                    <li>You win the level by matching Your Number to the Target Number, you lose the level if Your
+                        Number goes above the Target Number.</li>
+                    <li>The value of each crystal is hidden from you until you click on it.</li>
+                    <li>Each time when the game starts, the game will change the values of each crystal.</li>
+                    <li>Win 10 levels to win the game. Game Over after 10 losses.</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="row" id="crystals">
+                <div class="col-md-12 text-center">
+                    <div class="card">
+                        <div class="card-body" id="crystals">
+                            <img src="assets/images/crystal-b.svg" alt="crystal blue image">
+                            <img src="assets/images/crystal-g.svg" alt="crystal green image">
+                            <img src="assets/images/crystal-r.svg" alt="crystal red image">
+                            <img src="assets/images/crystal-y.svg" alt="crystal yellow image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="card text-white bg-info">
+                        <div class="card-header">
+                            <h2>Number</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="randomNumber text-center"></p>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-info">
+                        <div class="card-header">
+                            <h2>Total Score</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="totalScore text-center"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="card text-white bg-success">
+                        <div class="card-header">
+                            <h2>Wins</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="wins text-center"></p>
+                        </div>
+                    </div>
+                    <div class="card text-white bg-warning">
+                        <div class="card-header">
+                            <h2>Losses</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="losses text-center"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

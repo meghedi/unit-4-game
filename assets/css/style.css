@@ -1,0 +1,50 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --inside-width : 1400px;
+}
+
+header{
+    width:100%;
+}
+
+#headerIn{
+    max-width: var(--inside-width);
+}
+
+#crystals{
+    text-align: center;
+}
+
+#crystals img{
+    display: inline-block;
+    width:80px;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.container{
+    max-width:var(--inside-width);
+    margin: 10px auto;
+}
+
+.card{
+    margin-bottom: 8px;
+}
+
+.card-body{
+    min-height: 80px;
+    border: none;
+}
+
+.card-body p{
+    margin-bottom: 0px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}

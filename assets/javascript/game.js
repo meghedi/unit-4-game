@@ -23,8 +23,12 @@ function reset(){
         let randomCrystalNum = generateRandomNumber(1, 12);
         $(this).data('number', randomCrystalNum);
         $(this).attr('data-number', randomCrystalNum);
-
     });
+    if(wins === 10){
+        gameStatus(wins);
+    }else if (losses === 10){
+        gameStatus(losses);
+    }
 }
 
 
@@ -32,8 +36,18 @@ function generateRandomNumber(min, max){
      return Math.floor(Math.random() * max) + min;
 }
 
+function gameStatus(status){
+    let statusDisplay = "";
+    if(status === wins){
+        statusDisplay = "You Won";
+    }else{
+        statusDisplay = "Game Over";
+    }
+    $('.gameStatus').fadeIn();
+    $('.gameStatus').append(statusDisplay);
+}
+
 $('#crystals img').on('click', function () {
-    debugger;
     totalScore = $(this).data('number') + totalScore;
     if(totalScore === randomNumber){
         wins++;
